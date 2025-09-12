@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
 :root{
     font-family: "Kumbh Sans", sans-serif;
-
+    --lora: "Lora", serif;
     --celeste: #d5dfed;
 }
 
@@ -23,7 +24,13 @@ h1{
 h2 {
     text-transform: uppercase;
     font-size: 1.2rem;
-    margin-bottom: 1.6em;
+    margin-bottom: 1.6rem;
+    display: flex;
+    align-items: center;
+}
+
+h2 img {
+    margin-right: 1rem;
 }
 
 aside{
@@ -43,7 +50,7 @@ aside{
 }
 
 .div-objetivos, .section-contacto, .section-skills {
-    padding: 2em;
+    padding: 2rem;
 }
 
 .section-contacto p, span{
@@ -52,7 +59,7 @@ aside{
 }
 
 .section-contacto p img{
-    margin-right: 1.5em;
+    margin-right: 1.5rem;
 }
 
 a {
@@ -61,7 +68,45 @@ a {
 }
 
 /* SEGUNDA SECCION */
-.developer {
+.developer, .duracion {
+    font-family: var(--lora);
     font-style: italic;
+}
+
+.developer {
     font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.institucion *, li {
+    margin: 0 0 0.4rem 0
+}
+
+.institucion h3 {
+    font-size: 1rem;
+}
+
+.institucion, .habilidades ul {
+    margin-bottom: 2rem;
+}
+
+.habilidades, .idiomas {
+    margin-top: 2rem;
+}
+
+.habilidades li span {
+    font-weight: 700;
+}
+
+.habilidades ul li {
+    display: flex;
+    align-items: center;
+}
+
+.habilidades span {
+    margin-right: 0.4rem;
+}
+
+hr {
+    border: solid var(--celeste) 1px;
 }
