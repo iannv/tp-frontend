@@ -16,6 +16,9 @@ body {
 main {
     display: flex;
     min-height: 100vh;
+    max-width: 70vw;
+    margin: 0 auto;
+    border: solid var(--celeste) 1px;
 }
 
 h1 {
@@ -41,7 +44,7 @@ aside {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    box-shadow: 0px 0px 3px 2px #c2d3e8;;
+    box-shadow: 0px 0px 3px 2px #c2d3e8;
 }
 
 .div-foto-perfil {
