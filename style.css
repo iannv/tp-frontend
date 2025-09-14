@@ -1,22 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
-:root{
+:root {
     font-family: "Kumbh Sans", sans-serif;
     --lora: "Lora", serif;
     --celeste: #d5dfed;
 }
 
-html, body {
+html,
+body {
     padding: 0;
     margin: 0;
 }
 
 main {
     display: flex;
+    min-height: 100vh;
 }
 
-h1{
+h1 {
     font-size: 3rem;
     margin-bottom: 0;
 }
@@ -33,12 +35,16 @@ h2 img {
     margin-right: 1rem;
 }
 
-aside{
+aside {
     background-color: var(--celeste);
     width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0px 0px 3px 2px #c2d3e8;;
 }
 
-.div-foto-perfil{
+.div-foto-perfil {
     width: 50%;
     margin: auto;
 }
@@ -47,18 +53,25 @@ aside{
     border-radius: 50%;
     width: 100%;
     margin: auto;
+    border: #c2d5ee groove 1px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px 2px #c2d3e8;
 }
 
-.div-objetivos, .section-contacto, .section-skills {
-    padding: 2rem;
+.div-objetivos,
+.section-contacto,
+.section-skills,
+.section-soft-skills {
+    padding: 0 3rem;
 }
 
-.section-contacto p, span{
+.section-contacto p,
+span {
     display: flex;
     align-items: center;
 }
 
-.section-contacto p img{
+.section-contacto p img {
     margin-right: 1.5rem;
 }
 
@@ -68,7 +81,8 @@ a {
 }
 
 /* SEGUNDA SECCION */
-.developer, .duracion {
+.developer,
+.duracion {
     font-family: var(--lora);
     font-style: italic;
 }
@@ -78,7 +92,12 @@ a {
     margin-bottom: 2rem;
 }
 
-.institucion *, li {
+.carrera {
+    font-weight: 500;
+}
+
+.institucion *,
+li {
     margin: 0 0 0.4rem 0
 }
 
@@ -86,11 +105,13 @@ a {
     font-size: 1rem;
 }
 
-.institucion, .habilidades ul {
+.institucion,
+.habilidades ul {
     margin-bottom: 2rem;
 }
 
-.habilidades, .idiomas {
+.habilidades,
+.idiomas {
     margin-top: 2rem;
 }
 
@@ -101,6 +122,24 @@ a {
 .habilidades ul li {
     display: flex;
     align-items: center;
+}
+
+.habilidades ul {
+    padding-left: 0;
+}
+
+.habilidades ul li::before {
+    content: "";
+    background-image: url(assets/vineta.png);
+    width: 8px;
+    height: 8px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 0.5rem;
+}
+
+ul {
+    padding-left: 1rem;
 }
 
 .habilidades span {
