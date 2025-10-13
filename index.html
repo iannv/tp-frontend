@@ -5,162 +5,220 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Ian Vázquez</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=call" />
+
 </head>
 
 <body>
     <main>
 
-        <!-- ASIDE -->
-        <aside>
-            <section class="section-perfil">
-                <div class="div-foto-perfil">
-                    <img src="assets/img-perfil.jpg" alt="foto-perfil" class="perfil-img">
-                </div>
+        <!-- MENU BAR -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                <div class="div-objetivos">
-                    <h2 class="objetivos">Objetivos</h2>
-                    <p class="p-objetivos">
-                        Integrarme en una empresa que
-                        me permita profundizar mis
-                        habilidades y conocimientos,
-                        priorizando el trabajo en equipo
-                        y demostrando mi disposición
-                        para realizar capacitaciones
-                        relacionadas con el puesto, con
-                        el fin de contribuir de manera
-                        efectiva al logro de sus objetivos.
-                    </p>
-                </div>
-            </section>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                    </li>
 
-            <section class="section-contacto">
-                <h2 class="contacto">Contacto</h2>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+                    </li>
 
-                <p class="tel">
-                    <span>
-                        <img src="assets/tel.png" alt="telefono">
-                    </span>
-                    2262-151515
-                </p>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#servicios">Servicios</a>
+                    </li>
 
-                <p class="domicilio">
-                    <span>
-                        <img src="assets/ubicacion.png" alt="domicilio">
-                    </span>
-                    70 1010 - Necochea, Buenos Aires
-                </p>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#trabajos">Trabajos</a>
+                    </li>
 
-                <p class="mail">
-                    <span>
-                        <img src="assets/mail.png" alt="mail">
-                    </span>
-                    ianvazquez.dev@gmail.com
-                </p>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#contacto">Contacto</a>
+                    </li>
 
-                <p class="linkedin">
-                    <span>
-                        <img src="assets/linkedin.png" alt="linkedin">
-                        <a target="_blank" href="https://www.linkedin.com/in/ian-c-vazquez/">/ian-c-vazquez</a>
-                    </span>
-                </p>
-
-                <p class="github">
-                    <span>
-                        <img src="assets/github.png" alt="github">
-                        <a target="_blank" href="https://github.com/iannv">/iannv</a>
-                    </span>
-                </p>
-            </section>
-
-            <section class="section-soft-skills">
-                <h2 class="soft-skills">Habilidades blandas</h2>
-
-                <ul class="ul-habilidades-blandas">
-                    <li>Liderazgo</li>
-                    <li>Gestión del tiempo</li>
-                    <li>Trabajo en equipo</li>
-                    <li>Creatividad</li>
-                    <li>Proactividad</li>
-                    <li>Ética profesional</li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#mi-cv">Mi CV</a>
+                    </li>
                 </ul>
-            </section>
-        </aside>
 
-
-        <!-- SEGUNDA SECCION -->
-        <section class="section-skills">
-            <h1 class="titulo">IAN VÁZQUEZ</h1>
-            <p class="developer">Full Stack Developer</p>
-
-            <!-- ESTUDIOS Y CERTIFICACIONES -->
-            <div class="div-estudios">
-                <h2><img src="assets/flecha.png" alt="flecha"> Estudios y certificaciones</h2>
-
-                <div class="institucion">
-                    <h3 class="titulo">IFTS N° 29</h3>
-                    <p class="duracion">2023 - Actualidad</p>
-                    <p class="carrera">Desarrollo de Software</p>
                 </div>
+            </div>
+        </nav>
 
-                <div class="institucion">
-                    <h3 class="titulo">ONE - ORACLE NEXT EDUCATION</h3>
-                    <p class="duracion">2023</p>
-                    <p class="carrera">Programa Front-end</p>
+
+        <!-- ___________________________________________________________________________________________________________________________ -->
+        <!-- ___________________________________________________________________________________________________________________________ -->
+        <!-- PRESENTACIÓN -->
+        <section id="inicio" class="section-presentacion">
+            <h2>¡Hola, soy Ian!<span>Desarrollador Web y Aplicaciones Digitales</span></h2>
+            <p>
+                Soy un desarrollador apasionado con la misión de convertir ideas complejas en interfaces intuitivas, 
+                uniendo lógica, diseño y creatividad para crear experiencias simples y claras.
+            </p>
+            <button type="button" class="btn">Ver CV</button>
+        </section>
+
+
+
+        <!-- ___________________________________________________________________________________________________________________________ -->
+        <!-- ___________________________________________________________________________________________________________________________ -->
+        <!-- SOBRE MI -->
+        <section id="sobre-mi" class="section-sobre-mi">
+            <h3>SOBRE MI</h3>
+            <p>
+                Soy estudiante de Desarrollo de Software. Desde chico me fascinó entender cómo funcionan las cosas, 
+                y hoy canalizo esa curiosidad a través del código. Disfruto transformar ideas en proyectos reales y 
+                aprender algo nuevo en cada desafío. 
+                Actualmente me estoy enfocando en el desarrollo web con Angular y Django, y en el desarrollo de aplicaciones android con Kotlin, 
+                con el objetivo de seguir creciendo como desarrollador y participar en proyectos que permitan superarme cada día.
+            </p>
+
+            <div>
+                <h4>Mis habilidades</h4>
+
+            </div>
+        </section>
+
+
+
+        <!-- ___________________________________________________________________________________________________________________________ -->
+        <!-- ___________________________________________________________________________________________________________________________ -->
+        <!-- SERVICIOS -->
+        <section id="servicios" class="section-servicios">
+            <h3>SERVICIOS</h3>
+
+            <div class="card border-primary mb-3" style="max-width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Desarrollo de aplicaciones web</h5>
+                    <p class="card-text">Construcción de aplicaciones dinámicas, integrando bases de datos, autenticación de usuarios y paneles de administración.</p>
                 </div>
-
-                <div class="institucion">
-                    <h3 class="titulo">INSTITUTO SUPERIOR POLITÉCNICO CÓRDOBA</h3>
-                    <p class="duracion">2022 - 2024</p>
-                    <p class="carrera">Desarrollo Web y Aplicaciones Digitales</p>
-                </div>
-
-                <div class="institucion">
-                    <h3 class="titulo">CISCO NETWORKING ACADEMY</h3>
-                    <p class="duracion">2022</p>
-                    <p class="carrera">Programming Essentials in Python</p>
+            </div>
+            
+            <div class="card border-primary mb-3" style="max-width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Diseño y desarrollo de sitios web</h5>
+                    <p class="card-text">Creación de sitios web modernos, responsivos y optimizados, adaptados a las necesidades de cada cliente. Desde páginas personales hasta sitios corporativos o institucionales.</p>
                 </div>
             </div>
 
-            <hr>
-
-            <!-- HABILIDADES -->
-            <div class="habilidades">
-                <h2><img src="assets/flecha.png" alt="flecha"> Habilidades técnicas</h2>
-
-                <ul>
-                    <li><span>Front-end:</span> HTML, CSS, JavaScript, Angular, Bootstrap.
-                        Experiencia en diseño de interfaces con Figma.</li>
-
-                    <li><span>Back-end:</span> Python, Django, SQL. Desarrollo de APIs
-                        RESTful.</li>
-
-                    <li><span>Modelado con UML:</span> Diseño y comprensión de diagramas
-                        para análisis y diseño de sistemas.</li>
-
-                    <li><span>Metodologías ágiles y control de versiones:</span> Conocimientos en Scrum y dominio de Git
-                        y GitHub.</li>
-                </ul>
+            <div class="card border-primary mb-3" style="max-width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Desarrollo de aplicaciones móviles</h5>
+                    <p class="card-text">Desarrollo de aplicaciones para Android.</p>
+                </div>
             </div>
 
-            <hr>
-
-            <!-- IDIOMS -->
-            <div class="idiomas">
-                <h2><img src="assets/flecha.png" alt="flecha"> Idiomas</h2>
-
-                <ul>
-                    <li>Español nativo</li>
-                    <li>Inglés B2</li>
-                    <li>Alemán A2</li>
-                </ul>
+            <div class="card border-primary mb-3" style="max-width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Optimización y mantenimiento</h5>
+                    <p class="card-text">Mejora del rendimiento, seguridad y usabilidad de aplicaciones o sitios existentes.</p>
+                </div>
             </div>
+
 
         </section>
 
+
+
+        <!-- ___________________________________________________________________________________________________________________________ -->
+        <!-- ___________________________________________________________________________________________________________________________ -->
+        <!-- TRABAJOS -->
+        <section id="trabajos" class="section-trabajos">
+            <h3>TRABAJOS</h3>
+
+            <article class="article-trabajos">
+                <img src="assets/seprise.png" alt="seprise">
+                <div class="trabajo-descripcion">
+                    <p>
+                        Diseño y desarrollo de un software para la gestión de pacientes
+                        y turnos médicos de una clínica privada.
+                    </p>
+
+                    <div class="schips">
+                        <div class="chip">CSS</div>
+                        <div class="chip">JavaScript</div>
+                        <div class="chip">TypeScript</div>
+                        <div class="chip">React</div>
+                        <div class="chip">C#</div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="article-trabajos">
+                <img src="assets/kw.png" alt="kw">
+                <div class="trabajo-descripcion">
+                    <p>
+                        Diseño, desarrollo y mantenimiento de un sitio web para un emprendimiento familiar
+                        de venta de comidas típicas Argentinas en Canadá.
+                    </p>
+
+                    <div class="schips">
+                        <div class="chip">CSS</div>
+                        <div class="chip">Liquid</div>
+                        <div class="chip">Shopify</div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="article-trabajos">
+                <img src="assets/gym.jpg" alt="gymstra">
+                <div class="trabajo-descripcion">
+                    <p>
+                        Diseño, desarrollo y mantenimiento de una aplicación móvil
+                        para la gestión de un gimnasio.
+                    </p>
+
+                    <div class="schips">
+                        <div class="chip">XML</div>
+                        <div class="chip">Kotlin</div>
+                        <div class="chip">Django</div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="article-trabajos">
+                <img src="assets/salus.png" alt="salus">
+                <div class="trabajo-descripcion">
+                    <p>
+                        Diseño y desarrollo de una aplicación web y móvil para una clínica privada.
+                    </p>
+
+                    <div class="schips">
+                        <div class="chip">XML</div>
+                        <div class="chip">Java</div>
+                        <div class="chip">Django</div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+        <!-- ___________________________________________________________________________________________________________________________ -->
+        <!-- ___________________________________________________________________________________________________________________________ -->
+        <!-- CONTACTO -->
+
+        <!-- <section id="contacto" class="section-contacto">
+            <h3>CONTACTO</h3>
+            
+        </section> -->
+
+
+        <footer class="footer">
+            <hr>
+        </footer>
+
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 
 </html>

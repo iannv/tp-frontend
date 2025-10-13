@@ -2,153 +2,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
 :root {
-    font-family: "Kumbh Sans", sans-serif;
+    --kumbh: "Kumbh Sans", sans-serif !important;
     --lora: "Lora", serif;
     --celeste: #d5dfed;
+    --celeste-oscuro: #7996bc;
+    --azul: #09101A;
+    --azul-claro: #152031;
 }
+
 
 html,
 body {
     padding: 0;
     margin: 0;
+    font-family: var(--kumbh);
+    background-color: var(--azul);
+    color: white;
 }
 
 main {
-    display: flex;
-    min-height: 100vh;
-    max-width: 70vw;
     margin: 0 auto;
-    border: solid var(--celeste) 1px;
+    font-family: var(--kumbh);
 }
 
 h1 {
     font-size: 3rem;
     margin-bottom: 0;
+    font-weight: 600;
 }
 
 h2 {
     text-transform: uppercase;
     font-size: 1.2rem;
+    font-weight: 700;
     margin-bottom: 1.6rem;
     display: flex;
     align-items: center;
 }
 
-h2 img {
-    margin-right: 1rem;
+
+
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+/* ________________ MENU BAR ________________*/
+.container-fluid {
+    padding: 0;
 }
 
-aside {
-    background-color: var(--celeste);
-    width: 25vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    box-shadow: 0px 0px 3px 2px #c2d3e8;
-}
-
-.div-foto-perfil {
-    width: 50%;
-    margin: auto;
-}
-
-.perfil-img {
-    border-radius: 50%;
+.navbar {
+    position: fixed;
     width: 100%;
-    margin: auto;
-    border: #c2d5ee groove 1px;
-    border-radius: 50%;
-    box-shadow: 2px 2px 10px 2px #c2d3e8;
+    top: 0;
+    padding: 0;
+    z-index: 1;
 }
 
-.div-objetivos,
-.section-contacto,
-.section-skills,
-.section-soft-skills {
-    padding: 0 3rem;
-}
-
-.section-contacto p,
-span {
+.navbar-collapse {
+    background-color: var(--azul-claro);
     display: flex;
-    align-items: center;
+    justify-content: center;
+    height: 4rem;
 }
 
-.section-contacto p img {
-    margin-right: 1.5rem;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-/* SEGUNDA SECCION */
-.developer,
-.duracion {
-    font-family: var(--lora);
-    font-style: italic;
-}
-
-.developer {
-    font-size: 1.3rem;
-    margin-bottom: 2rem;
-}
-
-.carrera {
-    font-weight: 500;
-}
-
-.institucion *,
-li {
-    margin: 0 0 0.4rem 0
-}
-
-.institucion h3 {
-    font-size: 1rem;
-}
-
-.institucion,
-.habilidades ul {
-    margin-bottom: 2rem;
-}
-
-.habilidades,
-.idiomas {
-    margin-top: 2rem;
-}
-
-.habilidades li span {
+.navbar-nav .nav-item .nav-link {
+    color: white;
+    font-size: 0.875rem;
+    text-transform: uppercase;
     font-weight: 700;
+    position: relative;
+    display: inline-block;
 }
 
-.habilidades ul li {
-    display: flex;
-    align-items: center;
+.navbar-nav .nav-item .nav-link:hover {
+    color: var(--celeste-oscuro);
 }
 
-.habilidades ul {
-    padding-left: 0;
+
+.btn {
+    color: white;
+    background-color: var(--azul-claro);
 }
 
-.habilidades ul li::before {
-    content: "";
-    background-image: url(assets/vineta.png);
-    width: 8px;
-    height: 8px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-right: 0.5rem;
+.btn:hover {
+    background-color: var(--celeste-oscuro);
 }
 
-ul {
-    padding-left: 1rem;
+
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+/* ________________ SOBRE MI ________________*/
+main section:first-of-type {
+    padding-top: 12rem;
 }
 
-.habilidades span {
-    margin-right: 0.4rem;
-}
 
-hr {
-    border: solid var(--celeste) 1px;
-}
+
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+/* ________________ SERVICIOS  ________________*/
+
