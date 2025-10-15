@@ -10,7 +10,6 @@
     --azul-claro: #152031;
 }
 
-
 html,
 body {
     padding: 0;
@@ -18,11 +17,13 @@ body {
     font-family: var(--kumbh);
     background-color: var(--azul);
     color: white;
+    overflow-x: hidden;
 }
 
 main {
-    margin: 0 auto;
     font-family: var(--kumbh);
+    width: 60vw;
+    margin: 0 auto;
 }
 
 h1 {
@@ -40,7 +41,21 @@ h2 {
     align-items: center;
 }
 
+h3,
+h4 {
+    margin: 2rem 0;
+}
 
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#inicio button {
+    width: 12%;
+    height: 48px;
+}
 
 /* //////////////////////////////////////////////////////////////// */
 /* //////////////////////////////////////////////////////////////// */
@@ -87,17 +102,206 @@ h2 {
     background-color: var(--celeste-oscuro);
 }
 
-
-/* //////////////////////////////////////////////////////////////// */
-/* //////////////////////////////////////////////////////////////// */
-/* ________________ SOBRE MI ________________*/
 main section:first-of-type {
     padding-top: 12rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
 }
 
 
 
 /* //////////////////////////////////////////////////////////////// */
 /* //////////////////////////////////////////////////////////////// */
+/* ________________ SOBRE MI ________________*/
+
+#sobre-mi>div:first-of-type {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2rem;
+}
+
+#sobre-mi img {
+    width: 30%;
+    border-radius: 6px;
+}
+
+.habilidades-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.habilidades-container img {
+    min-width: 60px;
+}
+
+.habilidades-container section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.habilidades-container section:first-of-type {
+    padding-top: 0;
+}
+
+.habilidades-container section div {
+    text-align: center;
+}
+
+.habilidades-container section div h5 {
+    margin-top: 0.5rem;
+    color: var(--celeste-oscuro);
+}
+
+
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
 /* ________________ SERVICIOS  ________________*/
 
+
+/* Tablet horizontal */
+@media (max-width: 1080px) {
+    main {
+        /* background-color: green; */
+        width: 90vw;
+    }
+
+    section {
+        margin: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    main section:first-of-type {
+        padding-top: 4rem;
+    }
+
+    #inicio h2 {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    #inicio h2 span {
+        color: var(--celeste-oscuro);
+        font-weight: 400;
+    }
+
+    #inicio button {
+        width: 24%;
+    }
+
+    .habilidades-container {
+        width: 100%;
+    }
+
+    .habilidades-container section {
+        margin-bottom: 1rem;
+        margin-left: 0;
+    }
+
+    .habilidades-container section div h5 {
+        font-size: 1.1rem;
+    }
+}
+
+
+
+
+/* Tablet vertical */
+@media (max-width: 768px) {
+    main {
+        /* background-color: green; */
+        width: 95vw;
+    }
+
+    #sobre-mi>div:first-of-type {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #sobre-mi img {
+        width: 50%;
+        align-self: center;
+    }
+
+    #inicio h2 {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    #inicio h2 span {
+        color: var(--celeste-oscuro);
+        font-weight: 400;
+    }
+
+    #inicio button {
+        width: 24%;
+    }
+
+    .section-sobre-mi h4:first-of-type {
+        text-align: center;
+    }
+
+    .habilidades-container section {
+        flex-wrap: wrap;
+    }
+
+    .habilidades-container section div h5 {
+        font-size: 1.1rem;
+    }
+}
+
+
+
+
+/* Mobile */
+@media (max-width: 480px) {
+    main {
+        /* background-color: grey; */
+    }
+
+    #sobre-mi img {
+        width: 80%;
+    }
+
+    #inicio button {
+        width: 40%;
+    }
+
+    .habilidades-container img {
+        min-width: 45px;
+        max-width: 45px;
+    }
+
+    .habilidades-container section {
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .habilidades-container section div h5 {
+        font-size: 0.9rem;
+    }
+
+}
+
+
+
+
+/* Mobile */
+@media (max-width: 375px) {
+    nav {
+        margin-top: 1rem;
+    }
+
+    #sobre-mi img {
+        width: 100%;
+    }
+}

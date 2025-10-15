@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Ian Vázquez</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=call" />
@@ -13,16 +14,15 @@
 </head>
 
 <body>
-    <main>
+    <!-- MENU BAR -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <!-- MENU BAR -->
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
@@ -45,25 +45,26 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" href="#mi-cv">Mi CV</a>
+                        <a class="nav-link active" href="cv.html">Mi CV</a>
                     </li>
                 </ul>
 
-                </div>
             </div>
-        </nav>
+        </div>
+    </nav>
 
 
+    <main>
         <!-- ___________________________________________________________________________________________________________________________ -->
         <!-- ___________________________________________________________________________________________________________________________ -->
         <!-- PRESENTACIÓN -->
         <section id="inicio" class="section-presentacion">
             <h2>¡Hola, soy Ian!<span>Desarrollador Web y Aplicaciones Digitales</span></h2>
             <p>
-                Soy un desarrollador apasionado con la misión de convertir ideas complejas en interfaces intuitivas, 
+                Soy un desarrollador apasionado con la misión de convertir ideas complejas en interfaces intuitivas,
                 uniendo lógica, diseño y creatividad para crear experiencias simples y claras.
             </p>
-            <button type="button" class="btn">Ver CV</button>
+            <button type="button" class="btn"><a href="cv.html">Ver CV</a></button>
         </section>
 
 
@@ -73,16 +74,92 @@
         <!-- SOBRE MI -->
         <section id="sobre-mi" class="section-sobre-mi">
             <h3>SOBRE MI</h3>
-            <p>
-                Soy estudiante de Desarrollo de Software. Desde chico me fascinó entender cómo funcionan las cosas, 
-                y hoy canalizo esa curiosidad a través del código. Disfruto transformar ideas en proyectos reales y 
-                aprender algo nuevo en cada desafío. 
-                Actualmente me estoy enfocando en el desarrollo web con Angular y Django, y en el desarrollo de aplicaciones android con Kotlin, 
-                con el objetivo de seguir creciendo como desarrollador y participar en proyectos que permitan superarme cada día.
-            </p>
+            <div>
+                <p>
+                    Desde siempre me fascinó entender cómo funcionan las cosas,
+                    y hoy canalizo esa curiosidad a través del código. Disfruto transformar ideas en proyectos reales y
+                    aprender algo nuevo en cada desafío.
+                    Actualmente me estoy enfocando en el desarrollo web con Angular y Django, y en el desarrollo de
+                    aplicaciones android con Kotlin,
+                    con el objetivo de seguir creciendo como desarrollador y participar en proyectos que permitan
+                    superarme cada día.
+                </p>
+                <img src="assets/img-sobremi.jpg" alt="foto">
+            </div>
 
             <div>
                 <h4>Mis habilidades</h4>
+                <div class="habilidades-container">
+                    <section class="section-front">
+                        <div>
+                            <img src="assets/html.png" alt="HTML">
+                            <h5 class="skill">HTML</h5>
+                        </div>
+
+                        <div>
+                            <img src="assets/css.png" alt="CSS">
+                            <h5 class="skill">CSS</h5>
+                        </div>
+
+                        <div>
+                            <img src="assets/js.png" alt="JavaScript">
+                            <h5 class="skill">JavaScript</h5>
+                        </div>
+
+                        <div>
+                            <img src="assets/ts.png" alt="TypeScript">
+                            <h5 class="skill">TypeScript</h5>
+                        </div>
+
+                        <div>
+                            <img src="assets/angular.png" alt="angular">
+                            <h5 class="skill">Angular</h5>
+                        </div>
+                    </section>
+
+                    <section class="section-back">
+                        <div>
+                            <img src="assets/python.png" alt="Python">
+                            <h5 class="skill">Python</h5>
+                        </div>
+
+                        <div>
+                            <img src="assets/django.png" alt="Django">
+                            <h5 class="skill">Django</h5>
+                        </div>
+
+                        <div>
+                            <img src="assets/csharp.png" alt="C#">
+                            <h5 class="skill">C#</h5>
+                        </div>
+
+                        <div>
+                            <img src="assets/kotlin.png" alt="Kotlin">
+                            <h5 class="skill">Kotlin</h5>
+                        </div>
+                    </section>
+
+                    <section class="section-bd">
+                        <div>
+                            <img src="assets/sql.png" alt="My SQL">
+                            <h5 class="skill">My SQL</h5>
+                        </div>
+                    </section>
+
+                    <section class="section-collab">
+                        <div>
+                            <img src="assets/git.png" alt="Git">
+                            <h5 class="skill">Git</h5>
+                        </div>
+
+                        <div>
+                            <img src="assets/github2.png" alt="Github">
+                            <h5 class="skill">Github</h5>
+                        </div>
+                    </section>
+
+
+                </div>
 
             </div>
         </section>
@@ -98,14 +175,17 @@
             <div class="card border-primary mb-3" style="max-width: 18rem;">
                 <div class="card-body">
                     <h5 class="card-title">Desarrollo de aplicaciones web</h5>
-                    <p class="card-text">Construcción de aplicaciones dinámicas, integrando bases de datos, autenticación de usuarios y paneles de administración.</p>
+                    <p class="card-text">Construcción de aplicaciones dinámicas, integrando bases de datos,
+                        autenticación de usuarios y paneles de administración.</p>
                 </div>
             </div>
-            
+
             <div class="card border-primary mb-3" style="max-width: 18rem;">
                 <div class="card-body">
                     <h5 class="card-title">Diseño y desarrollo de sitios web</h5>
-                    <p class="card-text">Creación de sitios web modernos, responsivos y optimizados, adaptados a las necesidades de cada cliente. Desde páginas personales hasta sitios corporativos o institucionales.</p>
+                    <p class="card-text">Creación de sitios web modernos, responsivos y optimizados, adaptados a las
+                        necesidades de cada cliente. Desde páginas personales hasta sitios corporativos o
+                        institucionales.</p>
                 </div>
             </div>
 
@@ -119,7 +199,8 @@
             <div class="card border-primary mb-3" style="max-width: 18rem;">
                 <div class="card-body">
                     <h5 class="card-title">Optimización y mantenimiento</h5>
-                    <p class="card-text">Mejora del rendimiento, seguridad y usabilidad de aplicaciones o sitios existentes.</p>
+                    <p class="card-text">Mejora del rendimiento, seguridad y usabilidad de aplicaciones o sitios
+                        existentes.</p>
                 </div>
             </div>
 
@@ -218,7 +299,9 @@
 
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
