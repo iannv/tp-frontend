@@ -65,35 +65,56 @@ h4 {
     text-align: center;
 }
 
-
 a {
     text-decoration: none;
     color: white;
 }
 
+/* BANNER */
+#inicio {
+    position: relative;
+    display: inline-block;
+}
+
+#banner-img {
+    opacity: 0.3;
+    width: 100vw;
+    height: 50vh;
+}
+
+.inicio-banner-div {
+    position: absolute;
+    top: 30%;
+    left: 4rem;
+    right: 4rem;
+}
+
 #inicio h2 {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     font-size: 3rem;
-    width: 100%;
-    flex-wrap: wrap;
+    margin-bottom: 2rem;
 }
 
 #inicio h2 span {
     color: var(--celeste-oscuro);
     font-weight: 400;
     font-size: 2.2rem;
+    margin-top: 1rem;
 }
 
 #inicio p {
     font-size: 1.3rem;
+    font-style: italic;
+    margin-bottom: 3rem;
 }
 
 #inicio button {
     width: 12%;
     height: 48px;
 }
+
 
 /* //////////////////////////////////////////////////////////////// */
 /* //////////////////////////////////////////////////////////////// */
@@ -138,10 +159,6 @@ a {
 
 .btn:hover {
     background-color: var(--celeste-oscuro);
-}
-
-main section:first-of-type {
-    padding-top: 12rem;
 }
 
 section {
@@ -292,20 +309,25 @@ section {
         flex-direction: column;
     }
 
-
-    main section:first-of-type {
-        padding-top: 4rem;
+    .inicio-banner-div {
+        top: 20%;
     }
 
     #inicio h2 {
         display: flex;
         flex-direction: column;
         align-items: start;
+        font-size: 2.5rem;
     }
 
     #inicio h2 span {
         color: var(--celeste-oscuro);
         font-weight: 400;
+        font-size: 1.8rem;
+    }
+
+    #inicio p {
+        font-size: 1.1rem;
     }
 
     #inicio button {
@@ -357,6 +379,18 @@ section {
         align-self: center;
     }
 
+    .inicio-banner-div {
+        top: 15%;
+    }
+
+    #inicio h2 {
+        font-size: 2.2rem;
+    }
+
+    #inicio h2 span {
+        font-size: 1.5rem;
+    }
+
     #inicio button {
         width: 24%;
     }
@@ -396,8 +430,24 @@ section {
         min-width: 100vw;
     }
 
+    #banner-img {
+        height: 60vh;
+    }
+
     #sobre-mi img {
         width: 80%;
+    }
+
+    #inicio h2 {
+        font-size: 1.8rem;
+    }
+
+    #inicio h2 span {
+        font-size: 1.2rem;
+    }
+
+    #inicio p {
+        font-size: 1rem;
     }
 
     #inicio button {
@@ -433,4 +483,27 @@ section {
     #sobre-mi img {
         width: 100%;
     }
+
+    #banner-img {
+        height: 70vh;
+    }
+
+    .inicio-banner-div {
+        top: 10%;
+    }
+
+    #inicio h2 {
+        font-size: 1.8rem;
+    }
+
+    #inicio h2 span {
+        font-size: 1.2rem;
+    }
+
+    #inicio p {
+        font-size: 1rem;
+    }
 }
+
+
+/* SACAR EL MARGIN TOP SECCION SOBRE MI EN MOBILE */
