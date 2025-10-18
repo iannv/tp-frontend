@@ -1,19 +1,23 @@
 main {
-
-    border: solid var(--celeste) 1px;
+    display: flex;
+    /* margin: auto; */
 }
 
 h2 img {
     margin-right: 1rem;
 }
 
+h3::after {
+    display: none;
+}
+
 aside {
     background-color: var(--celeste);
+    color: var(--azul);
     width: 25vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    box-shadow: 0px 0px 3px 2px #c2d3e8;
 }
 
 .div-foto-perfil {
@@ -35,6 +39,15 @@ aside {
 .section-skills,
 .section-soft-skills {
     padding: 0 3rem;
+}
+
+.section-skills {
+    background-color: whitesmoke;
+    color: var(--azul);
+}
+
+.section-skills h1 {
+    margin-top: 2rem;
 }
 
 .section-contacto p,
@@ -73,29 +86,25 @@ li {
     margin: 0 0 0.4rem 0
 }
 
-.institucion > h3 {
+.institucion h3 {
     font-size: 1rem;
     font-weight: 700;
-}
-
-.institucion,
-.habilidades ul {
-    margin-bottom: 2rem;
+    text-align: left;
 }
 
 .habilidades,
 .idiomas {
-    margin-top: 2rem;
+    margin-top: 0.5rem;
 }
 
 .habilidades li span {
     font-weight: 700;
-    /* width: 190px; */
 }
 
 .habilidades ul li {
-    display: flex;
+    display: inline-flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .habilidades ul {
@@ -123,3 +132,75 @@ ul {
 hr {
     border: solid var(--celeste) 1px;
 }
+
+.btn {
+    width: 15vw;
+    height: 48px;
+    margin: 1rem 17%;
+}
+
+
+
+
+
+/* Tablet horizontal */
+@media (max-width: 1080px) {
+    main {
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    aside,
+    .section-skills {
+        width: 60%;
+        margin: auto;
+    }
+
+    .btn {
+        width: 25vw;
+        margin: 1rem 20%;
+    }
+}
+
+
+
+
+/* Tablet vertical */
+@media (max-width: 768px) {
+
+    aside,
+    .section-skills {
+        width: 90%;
+    }
+
+    .section-skills h1 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        width: 90vw;
+        margin: 1rem 5%;
+    }
+}
+
+
+
+
+/* Mobile */
+@media (max-width: 480px) {
+
+    aside,
+    .section-skills {
+        width: 100%;
+    }
+
+    .btn {
+        width: 50vw;
+    }
+}
+
+
+
+
+/* Mobile */
+@media (max-width: 375px) {}

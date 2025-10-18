@@ -70,10 +70,34 @@ a {
     color: white;
 }
 
+
+
+/* MENU */
+nav.navbar {
+    background-color: var(--azul-claro);
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+    transform: scale(0.95);
+    transition: transform 0.5s ease;
+}
+
+.navbar-toggler {
+    border: none;
+
+}
+
+
+
 /* BANNER */
 #inicio {
     position: relative;
     display: inline-block;
+    margin-left: 0;
+    margin-top: 0;
 }
 
 #banner-img {
@@ -292,6 +316,45 @@ section {
 
 
 
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+/* ________________ FOOTER ________________*/
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--azul-claro);
+    height: 3rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+footer p a {
+    cursor: pointer;
+    font-weight: 800;
+}
+
+
+
+/* //////////////////////////////////////////////////////////////// */
+
+@media (max-width: 991px) {
+    div.container-fluid {
+        margin-top: 1rem;
+    }
+
+    .navbar-collapse {
+        height: 18rem;
+        transition: 0.5s ease-in-out;
+    }
+}
+
+
+
+
 
 
 /* //////////////////////////////////////////////////////////////// */
@@ -360,7 +423,6 @@ section {
 }
 
 
-
 /* //////////////////////////////////////////////////////////////// */
 /* Tablet vertical */
 @media (max-width: 768px) {
@@ -376,7 +438,6 @@ section {
 
     #sobre-mi img {
         width: 50%;
-        align-self: center;
     }
 
     .inicio-banner-div {
